@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f7f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
 }
 
-/* HEADER */
 .header {
-  background: #0a8f3c;
+  background: #1b5e20;
   color: white;
   padding: 50px 20px;
+  margin-top: 90px;
 }
 
 .header-content {
@@ -21,10 +21,9 @@ body {
   margin-bottom: 10px;
 }
 
-/* INFO CARDS */
 .info-cards {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+
   gap: 0px;
   max-width: 1000px;
   margin: -40px auto 40px;
@@ -35,10 +34,11 @@ body {
   background: white;
   padding: 10px;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: 2px solid #4caf50;
+  box-shadow: 0 5px 15px rgba(75,175,80,0.2);
 }
 
-/* MAIN LAYOUT */
+
 .main {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -48,11 +48,11 @@ body {
   padding: 20px;
 }
 
-/* FORM */
 .form-container {
   background: white;
   padding: 20px;
   border-radius: 12px;
+  border: 2px solid #4caf50;
 }
 
 .row {
@@ -65,29 +65,30 @@ input, select, textarea {
   padding: 12px;
   margin: 10px 0;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #4caf50;
 }
 
 button {
   width: 100%;
   padding: 12px;
-  background: #0a8f3c;
+  background: #4caf50;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background: #087a33;
+  background: #1b5e20;
 }
 
-/* SIDEBAR */
 .sidebar {
   background: white;
   padding: 20px;
   border-radius: 12px;
+  border: 2px solid #4caf50;
 }
 
 .contact-box {
@@ -95,31 +96,139 @@ button:hover {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
-navbar {
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 40px;
-    background-color: #1b5e20;
+    padding: 15px 40px;
+    background-color: white;
+    border-bottom: 3px solid #1b5e20;
+    z-index: 1000;
 }
 
-navlinks a {
-    background: none;
-    text-decoration: none;
-    border: none;
-    color: white;
-    margin-left: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    text-transform: none;
-    align-items: center;
+.navbar-brand img {
+    height: 60px;
+    width: auto;
 }
-navlinks a:hover {
-    color: #4caf50; }
+
+.navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #1b5e20 !important;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4caf50 !important;
+}
 
     .cards-container {
-  display: flex;             /* Arrange cards horizontally */
-  gap: 20px;                 /* Space between cards */
-  overflow-x: auto;          /* Enable horizontal scroll if needed */
+  display: flex;            
+  gap: 20px;                
+  overflow-x: auto;         
   padding: 20px
     }
+
+    :root {
+  --bg-dark: #ffffff;
+  --text-muted: #555555;
+  --text-light: #1b5e20;
+  --dull-green: #4caf50;
+  --accent-green: #2d5a3a;
+}
+
+body { margin: 0; font-family: sans-serif; }
+
+.site-footer {
+  background-color: var(--bg-dark);
+  color: var(--text-muted);
+  padding: 60px 20px 30px;
+  font-size: 0.9rem;
+  border-top: 3px solid #1b5e20;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.logo .icon {
+  background-color: var(--dull-green);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.brand h2 {
+  color: var(--text-light);
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.footer-column h3 {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li { margin-bottom: 10px; }
+
+.footer-column a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: var(--dull-green);
+}
+
+.footer-column address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.footer-column p { line-height: 1.6; margin: 5px 0; }
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 0.8rem;
+}

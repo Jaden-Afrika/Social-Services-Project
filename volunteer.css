@@ -33,20 +33,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 40px;
-    background-color: #1b5e20;
+    padding: 15px 40px;
+    background-color: white;
+    border-bottom: 3px solid #1b5e20;
 }
 
 .navlinks a {
     background: none;
     text-decoration: none;
     border: none;
-    color: white;
+    color: #1b5e20;
     margin-left: 20px;
     font-weight: 500;
     cursor: pointer;
     text-transform: none;
     align-items: center;
+    transition: color 0.3s ease;
 }
 
 .navlinks a:hover {
@@ -195,4 +197,91 @@ body {
 .btn:hover {
     background-color: #1b5e20;
     border-color: #1b5e20;
+}
+:root {
+  --bg-dark: #ffffff;
+  --text-muted: #555555;
+  --text-light: #1b5e20;
+  --dull-green: #4caf50; /* The "dullish green" */
+  --accent-green: #2d5a3a;
+}
+
+body { margin: 0; font-family: sans-serif; }
+
+.site-footer {
+  background-color: var(--bg-dark);
+  color: var(--text-muted);
+  padding: 60px 20px 30px;
+  font-size: 0.9rem;
+  border-top: 3px solid #1b5e20;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 40px;
+}
+
+/* Brand/Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.logo .icon {
+  background-color: var(--dull-green);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.brand h2 {
+  color: var(--text-light);
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+/* Typography & Links */
+.footer-column h3 {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li { margin-bottom: 10px; }
+
+.footer-column a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: var(--dull-green);
+}
+
+.footer-column address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.footer-column p { line-height: 1.6; margin: 5px 0; }
+
+/* Copyright Bar */
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 0.8rem;
 }
