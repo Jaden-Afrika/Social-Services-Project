@@ -63,23 +63,107 @@ body{
     justify-content: space-around;
     padding: 2em;  
 }
-.cat-breed {
+.achievements {
     flex: 1 1 300px;
     margin: 1em;
     padding: 1em;
-    border: 1px solid #ddd;
+    border: 2px solid #4caf50;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(75,175,80,0.2);
     text-align: center;
     transition: transform 0.3s;
+    background-color: #f9fff9;
 }
 
-.cat-breed h3 {
+.achievements h3 {
     margin: 0.5em 0;
+    color: #1b5e20;
 }
-.cat-breed p {
+.achievements p {
     margin: 0.5em 0 1em;
 }
-.cat-breed:hover {
+.achievements:hover {
     transform: scale(1.05);
+}
+
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.help-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    color: #1a2b3c;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+
+.cards-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; }
+
+
+.card {
+    background: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #1b5e20;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+    flex-grow: 1; 
+    margin-bottom: 25px;
+}
+
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #4caf50;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: #4caf50;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #1b5e20;
+    border-color: #1b5e20;
 }

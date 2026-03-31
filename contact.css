@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7f9;
+}
+
+/* HEADER */
+.header {
+  background: #0a8f3c;
+  color: white;
+  padding: 50px 20px;
+}
+
+.header-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* INFO CARDS */
+.info-cards {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px;
+  max-width: 1000px;
+  margin: -40px auto 40px;
+  padding:  20px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* MAIN LAYOUT */
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* FORM */
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0a8f3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #087a33;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.contact-box {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #1b5e20;
+}
+
+navlinks a {
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: none;
+    align-items: center;
+}
+navlinks a:hover {
+    color: #4caf50; }
+
+    .cards-container {
+  display: flex;             /* Arrange cards horizontally */
+  gap: 20px;                 /* Space between cards */
+  overflow-x: auto;          /* Enable horizontal scroll if needed */
+  padding: 20px
+    }
