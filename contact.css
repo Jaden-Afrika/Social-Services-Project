@@ -24,16 +24,16 @@ body {
 /* INFO CARDS */
 .info-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px;
   max-width: 1000px;
   margin: -40px auto 40px;
-  padding: 0 20px;
+  padding:  20px;
 }
 
 .card {
   background: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
@@ -95,3 +95,31 @@ button:hover {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
+navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #1b5e20;
+}
+
+navlinks a {
+    background: none;
+    text-decoration: none;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: none;
+    align-items: center;
+}
+navlinks a:hover {
+    color: #4caf50; }
+
+    .cards-container {
+  display: flex;             /* Arrange cards horizontally */
+  gap: 20px;                 /* Space between cards */
+  overflow-x: auto;          /* Enable horizontal scroll if needed */
+  padding: 20px
+    }
