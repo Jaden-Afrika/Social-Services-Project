@@ -1,0 +1,25 @@
+.bg-custom {
+    background-color: rgb(12, 138, 12);
+}
+.bg-custom-cards {
+    background-color:rgb(53, 202, 53) ;
+}
+.icons-custom {
+    color: rgb(53, 202, 53);
+}
+.custom-card {
+    border: 1px solid;
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+}
+.custom-image {
+    border-radius: 10px;
+    width: 99%;
+    /* height: 100px; */
+}
+.custom-image2 {
+    border-radius: 10px;
+    width: 97%;
+    height:600px;
+}
